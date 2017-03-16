@@ -1,0 +1,21 @@
+<div #chatWindow class="chat-window">
+    <img src="../../../assets/imgs/blackjack.jpg">
+    <div *ngFor="let message of messages">
+        <p><b>{{message.username}}</b></p>
+        <p>{{message.message}}</p>
+    </div>
+</div>
+
+<div>
+    <form (ngSubmit)="sendMessage()" #form="ngForm">
+        <div>
+            <input type="text" [(ngModel)]="chatMessage.username" name="username" placeholder="Username...">
+        </div>
+        <div>
+            <textarea type="text" [(ngModel)]="chatMessage.message" name="message" placeholder="Message..."></textarea>
+        </div>
+        <div>
+            <button type="submit">Send</button>
+        </div>
+    </form>
+</div>
