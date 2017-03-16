@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-# bachat
-=======
->>>>>>> Initial project setup
-Chat
+Chat Bachat!
